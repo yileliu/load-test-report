@@ -1,0 +1,8 @@
+"Method","Name","# requests","# failures","Median response time","Average response time","Min response time","Max response time","Average Content Size","Requests/s"
+"GET","/projects",221,119,2200,2831,884,9608,1924327,0.75
+"POST","/projects",224,91,470,603,81,2589,26,0.76
+"DELETE","/projects/:id",58,12,630,817,82,3166,0,0.20
+"GET","/projects/:id",766,196,590,818,79,3312,213,2.60
+"PUT","/projects/:id",332,79,650,832,80,3367,0,1.13
+"POST","/projects/:id/elements",769,187,680,899,83,3434,28,2.61
+"None","Total",2370,684,690,1013,79,9608,179522,8.04

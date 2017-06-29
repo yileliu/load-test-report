@@ -1,0 +1,23 @@
+{
+  "name": "load-test-report",
+  "version": "1.0.0",
+  "description": "a chart to display load test trend",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yileliu/load-test-report.git"
+  },
+  "author": "yaqincheng0812@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yileliu/load-test-report/issues"
+  },
+  "homepage": "https://github.com/yileliu/load-test-report#readme"
+}
