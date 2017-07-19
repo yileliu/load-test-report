@@ -1,8 +1,17 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.bg-primary {
+    background-color: #a86454!important;
+}
+
+.content{
+  padding: 30px 10px;
+}
+
+.navbar-brand, .navbar-brand:focus, .navbar-brand:hover {
+    color: #FFF;
+    font-family: Arvo,Georgia,"Times New Roman",Times,serif;
+    font-weight: bold;
 }
