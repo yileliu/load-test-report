@@ -1,16 +1,19 @@
 function ReportChart(){
-    var getChartData = function(){
+
+    var createChart = function(){
         $.get('/report', function(data, error){
-            console.log(data);
+            renderChart(data);
         })
     };
 
-    var creatChart = function(){
-        getChartData();
-        console.log('createChart');
+    var renderChart = function(data){
+        console.log(data);
     }
 
-    creatChart();
+    return {
+        createChart: createChart
+    }
 }
 
-ReportChart();
+const reportChart = new ReportChart();
+reportChart.createChart()
