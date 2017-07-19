@@ -1,23 +1,19 @@
 {
   "name": "load-test-report",
-  "version": "1.0.0",
-  "description": "a chart to display load test trend",
-  "main": "server.js",
-  "dependencies": {
-    "express": "^4.15.3"
-  },
-  "devDependencies": {},
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yileliu/load-test-report.git"
-  },
-  "author": "yaqincheng0812@163.com",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yileliu/load-test-report/issues"
-  },
-  "homepage": "https://github.com/yileliu/load-test-report#readme"
+  "dependencies": {
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "express": "~4.14.1",
+    "highcharts": "^5.0.12",
+    "jquery": "^3.2.1",
+    "morgan": "~1.7.0",
+    "pug": "^2.0.0-rc.2",
+    "serve-favicon": "~2.3.2"
+  }
 }
