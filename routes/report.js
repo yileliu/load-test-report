@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var Request = require('../db/model/request');
+var _ = require('lodash');
 
 router.get('/', function(req, res, next) {
     var aggregator = Request.aggregate();
@@ -13,6 +14,9 @@ router.get('/', function(req, res, next) {
     aggregator = aggregator.project({ "value.method": 0,"value.name":0});
 
     aggregator.exec(function(err, result) {
+        result.forEach((r)=>{
+            r.value = _.sortBy(r.value, 'date');
+        });
         res.send(result);
     });
 });
