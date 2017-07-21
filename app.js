@@ -44,7 +44,7 @@ app.use(function(err, req, res, next) {
 });
 
 var mongoose = require("mongoose");
-var db = mongoose.connect("mongodb://localhost:27017/mydb", {
+var db = mongoose.connect("mongodb://127.0.0.1:27017/mydb", {
   useMongoClient: true,
   /* other options */
 });

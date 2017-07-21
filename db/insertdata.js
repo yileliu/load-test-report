@@ -12,7 +12,7 @@ db.open(function(err, db){
                 console.log(err);
                 }else{
 
-                    lineReader.eachLine('requests_2017-06-20.csv', function(line, last) {
+                    lineReader.eachLine('requests_2017-06-11.csv', function(line, last) {
                        var methodJson = line.split(",")[0]; 
                        var nameJson = line.split(",")[1]; 
                        var requestNumberJson = Number(line.split(",")[2]); 
@@ -24,7 +24,7 @@ db.open(function(err, db){
                        var averageContentSizeJson = Number(line.split(",")[8]); 
                        var requestsPerSecJson = Number(line.split(",")[9]); 
 
-                       var json = {date:"2017-06-20",
+                       var json = {date:"2017-06-11",
                                    method:methodJson,
                                    name:nameJson,
                                    requestNumber:requestNumberJson,
