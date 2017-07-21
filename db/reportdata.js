@@ -1,9 +1,3 @@
-var express = require('express');
-var router = express.Router();
-var mongoose = require('mongoose');
-
-router.get('/', function(req, res, next) {
-
 var TestSchema = new mongoose.Schema({
     date : { type:String },
     method  : { type:String },
@@ -24,8 +18,8 @@ aggregator = aggregator.group({_id:{ method:"$data.method", name:"$data.name" },
 aggregator = aggregator.project({ "value.method": 0,"value.name":0});
 
 aggregator.exec(function(err, result) {
-        res.send(result);
-    });
+
+    return result;
+
 });
 
-module.exports = router;

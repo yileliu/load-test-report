@@ -43,4 +43,10 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+var mongoose = require("mongoose");
+var db = mongoose.connect("mongodb://localhost:27017/mydb", {
+  useMongoClient: true,
+  /* other options */
+});
+
 module.exports = app;
